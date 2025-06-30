@@ -770,21 +770,6 @@ function format_currency($amount) {
                 width: 100%;
             }
         }
-        
-        @keyframes float {
-            0% { transform: translateY(0px);}
-            50% { transform: translateY(-15px);}
-            100% { transform: translateY(0px);}
-        }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 #FFC10744; }
-            70% { box-shadow: 0 0 0 10px #FFC10700; }
-            100% { box-shadow: 0 0 0 0 #FFC10700; }
-        }
-        .feature-card:hover, .order-action:hover, .promo-btn:hover {
-            transform: translateY(-3px) scale(1.03);
-            box-shadow: 0 6px 18px rgba(0,86,224,0.13);
-        }
     </style>
 </head>
 <body>
@@ -842,13 +827,31 @@ function format_currency($amount) {
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <span class="sidebar-icon"><i class="fas fa-file-alt"></i></span>
-                        <span>Orders</span>
+                        <span>Order Details</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <span class="sidebar-icon"><i class="fas fa-heart"></i></span>
-                        <span>Wishlist</span>
+                        <span class="sidebar-icon"><i class="fas fa-redo"></i></span>
+                        <span>Frequently Purchased</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon"><i class="fas fa-plane"></i></span>
+                        <span>Travel/Hotel</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon"><i class="fas fa-ticket-alt"></i></span>
+                        <span>Club Stamp</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon"><i class="fas fa-credit-card"></i></span>
+                        <span>Pulse Card</span>
                     </a>
                 </li>
             </ul>
@@ -1008,24 +1011,6 @@ function format_currency($amount) {
             </div>
         </div>
     </main>
-    
-    <!-- Sparky Bunny Assistant -->
-    <div class="sparky-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 999; display: flex; align-items: flex-end;">
-        <div class="sparky-bubble show" style="background: #fff; border-radius: 15px; padding: 15px; max-width: 250px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-right: 20px; opacity: 1; transform: translateY(0); transition: all 0.5s ease; position: relative;">
-            <p style="font-size: 15px; color: #222;">Hi, I'm Sparky! Need help or tips? Click me!</p>
-        </div>
-        <div class="sparky" style="width: 100px; height: 100px; background: #fff; border-radius: 50%; position: relative; box-shadow: 0 0 15px rgba(0, 86, 224, 0.3); cursor: pointer; animation: float 3s ease-in-out infinite;">
-            <div class="ear left" style="width: 10px; height: 40px; background: #fff; border: 1.5px solid #0056E0; border-radius: 50%; position: absolute; top: -15px; left: 20px; transform: rotate(-15deg);"></div>
-            <div class="ear right" style="width: 10px; height: 40px; background: #fff; border: 1.5px solid #0056E0; border-radius: 50%; position: absolute; top: -15px; right: 20px; transform: rotate(15deg);"></div>
-            <div class="eye left" style="width: 10px; height: 10px; background: #0056E0; border-radius: 50%; position: absolute; top: 30px; left: 25px;"></div>
-            <div class="eye right" style="width: 10px; height: 10px; background: #0056E0; border-radius: 50%; position: absolute; top: 30px; right: 25px;"></div>
-            <div class="nose" style="width: 5px; height: 5px; background: #FFC107; border-radius: 50%; position: absolute; top: 45px; left: 47.5px;"></div>
-            <div class="mouth" style="width: 10px; height: 5px; border-bottom: 1.5px solid #FFC107; border-radius: 50%; position: absolute; top: 50px; left: 45px;"></div>
-            <div class="vest" style="width: 40px; height: 30px; background: #0056E0; position: absolute; top: 60px; left: 30px; border-radius: 5px;"></div>
-            <div class="lightning-bolt" style="width: 10px; height: 15px; background: #FFC107; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); position: absolute; top: 67px; left: 45px; animation: pulse 2s infinite;"></div>
-            <div class="tail" style="width: 15px; height: 15px; background: #fff; border: 1.5px solid #0056E0; border-top: none; border-right: none; border-radius: 50%; position: absolute; bottom: 10px; right: 10px; transform: rotate(45deg);"></div>
-        </div>
-    </div>
     
     <script>
         // Interactive functionality
